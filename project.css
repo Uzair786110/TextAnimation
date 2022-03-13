@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+.container
+{
+    position: relative;
+    border: black 5px solid;
+    width: 500px;
+    height: 200px;
+    top: 40%;
+    left: 30%;
+}
+  
+ .line {
+    display:block;
+    position:absolute;
+    top:45%;
+    border-left:5px solid whitesmoke;
+    height:0%;
+    text-align:center;
+    animation: line 5s linear forwards;
+   
+  }
+
+  
+  @keyframes line {
+    0% {
+        left: 0%;
+      top:50%;
+      height:0%;
+    }
+    10% {
+      top:5%;
+      height:90%;
+      
+    }
+    20%
+    {
+        left: 0%;
+    }
+    80%{
+        left: 100%;
+    }
+    90%{
+        top:5%;
+        height:90%;
+    }
+    100%{
+        top:50%;
+        height:0%;
+        left: 100%;
+    }
+  }
+
+  
+
+
+.text
+{
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 160px;
+    max-width: 0%;
+    color: #FFF;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+@keyframes example {
+    0%   {  max-width: 0%; }
+    100%  {
+        max-width: 100%;
+    transition: max-width 4s linear;}
+}
